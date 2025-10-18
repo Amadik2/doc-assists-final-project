@@ -1,0 +1,38 @@
+```mermaid
+graph TD
+    title["DOC ASSIST - HIGH-LEVEL ARCHITECTURE"]
+    
+    %% Main components
+    UserQuery[User Query]
+    RAGPipeline[RAG Pipeline]
+    UserResponse[User Response]
+    Retriever[Retriever]
+    Generator[Generator]
+    DocIndex[Documentation Index]
+    LangModel[Language Model]
+    
+    %% Connections
+    UserQuery --> RAGPipeline
+    RAGPipeline --> UserResponse
+    RAGPipeline -- "Orchestrates" --> Retriever
+    RAGPipeline -- "Orchestrates" --> Generator
+    Retriever --> DocIndex
+    Generator --> LangModel
+    
+    %% Principles
+    subgraph "ARCHITECTURAL PRINCIPLES"
+        Modularity["✓ MODULARITY: Well-defined interfaces between\ncomponents for independent development"]
+        Semantic["✓ SEMANTIC UNDERSTANDING: Meaning-based query\nprocessing beyond keyword matching"]
+        Evidence["✓ EVIDENCE-BASED GENERATION: Responses grounded\nin retrieved documentation"]
+        Adaptability["✓ ADAPTABILITY: Support for swapping models and\napproaches without system-wide changes"]
+    end
+    
+    %% Styling
+    classDef component fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef data fill:#bbf,stroke:#333,stroke-width:1px;
+    classDef principle fill:#dfd,stroke:#333,stroke-width:1px;
+    
+    class RAGPipeline,Retriever,Generator component;
+    class UserQuery,UserResponse,DocIndex,LangModel data;
+    class Modularity,Semantic,Evidence,Adaptability principle;
+```

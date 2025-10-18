@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+indices/
+models/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Large/Generated Artifacts
+# Keep source files (e.g., .mmd, .txt) but ignore rendered/compiled outputs
+# Figures
+figures/*.svg
+figures/*.png
+figures/*.jpg
+figures/*.jpeg
+figures/*.pdf
+
+# Generated documents (if used by the project)
+generated_documents/
+
+# Data artifacts (often large)
+data/**/*.pkl
+data/**/*.npz
+data/**/*.npy
+data/train/
+data/valid/
+data/test/
+data/conala/
+data/conala-corpus/
+data/sample_conala/
+
+# Specific large files identified by GitHub
+data/train/rnn_partialcontext_word_embedding_text_150.pickle
+data/conala-corpus/conala-mined.jsonl
+
+# Keep small code samples
+!data/sample_data.py
+
+# Archives and compressed artifacts
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z

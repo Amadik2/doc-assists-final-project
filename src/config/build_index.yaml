@@ -1,0 +1,12 @@
+data:
+  staqc_path: "data/staqc_python.pkl"
+  conala_path: null
+embed:
+  model: "all-MiniLM-L6-v2"
+  batch_size: 64
+index:
+  faiss_path: "indices/docassist.faiss"
+  mapping_path: "indices/docassist.mapping.json"
+  use_ivfpq: true
+  ivf_centroids: 4096
+  pq_m: 16

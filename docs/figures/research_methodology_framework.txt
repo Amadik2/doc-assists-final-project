@@ -1,0 +1,33 @@
++------------------------+                +------------------------+
+|   Research Questions   |                |   Evaluation Methods   |
++------------------------+                +------------------------+
+| RQ1: Effective        |--------------->| - Quantitative:        |
+| Methodology for       |                |   * BLEU Score         |
+| Domain-Specific QA    |--------------->|   * ROUGE-L            |
+| System                |                |   * F1 Score           |
+|                       |--------------->|                        |
+| RQ2: Impact of        |                | - Qualitative:         |
+| Training Data Quality |--------------->|   * User Interactions  |
+| & Composition         |                |   * Contextual         |
+|                       |                |     Relevance          |
++----------+------------+                |                        |
+           |                             | - Comparative Analysis |
+           |                             |   RAG vs Traditional   |
+           v                             |   Search               |
++----------+------------+                +------------------------+
+| Implementation &      |                          ^
+| Data Sources          |                          |
++------------------------+                         |
+| - RAG Architecture    |-------------------------+
+|   Implementation      |
+|                       |
+| - Traditional Search  |-------------------------+
+|   Methods             |                         |
+|                       |                         |
+| - Training Data:      |                         |
+|   * StaQC Dataset     |-------------------------+
+|     (Large, Web-mined)|                         |
+|   * CoNaLa Dataset    |-------------------------+
+|     (Small, Human-    |
+|      annotated)       |
++------------------------+

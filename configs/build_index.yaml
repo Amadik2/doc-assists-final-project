@@ -1,0 +1,12 @@
+data:
+  staqc_path: "data/sample_staqc.pkl"
+  conala_path: "data/sample_conala/conala-train.jsonl"
+embed:
+  model: "all-MiniLM-L6-v2"
+  batch_size: 64
+index:
+  faiss_path: "indices/sample_docassist.faiss"
+  mapping_path: "indices/sample_docassist.mapping.json"
+  use_ivfpq: false
+  ivf_centroids: 4
+  pq_m: 4

@@ -1,0 +1,61 @@
+```
+                        BLEU
+                         100
+                          |
+                          |
+                          |
+                         80
+                          |
+                          |
+                         60
+                          |
+                          |
+                         40
+                          |
+                          |
+                         20
+                          |
+(Lower is better) --------+-------- ROUGE-L
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+Task Completion Time                F1 Score
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+                          |
+Hallucination Rate                 CodeBLEU
+                          |
+                          |
+                          |
+                         MRR
+
+Legend:
+------ Doc Assist
+------ Best Baseline
+------ Human Expert (partial data)
+
+Figure 5.1: Radar chart comparing Doc Assist performance against baselines across all key metrics,
+showing consistent improvements across dimensions.
+
+Normalized Values (0-100 scale):
+                   Doc Assist    Best Baseline    Human Expert
+BLEU               43.5          36.9             N/A
+ROUGE-L            51.2          45.8             N/A
+F1 Score           78.0          69.0             83.0
+CodeBLEU           45.1          38.5             N/A
+MRR                85.0          78.0             N/A
+Hallucination Rate 94.2          84.3             97.9
+Task Completion    80.0          0.0              100.0
+```

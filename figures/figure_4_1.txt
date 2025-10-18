@@ -1,0 +1,50 @@
+```
++------------------------------------------------------+
+|                    DOC ASSIST                         |
+|                HIGH-LEVEL ARCHITECTURE                |
++------------------------------------------------------+
+
++----------------+        +----------------+        +----------------+
+|                |        |                |        |                |
+|    USER        +------->+    RAG         +------->+    USER        |
+|    QUERY       |        |    PIPELINE    |        |    RESPONSE    |
+|                |        |                |        |                |
++----------------+        +-------+--------+        +----------------+
+                                 |
+                                 | Orchestrates
+                                 |
+                 +---------------v---------------+
+                 |                               |
+     +-----------+------------+     +-----------+-----------+
+     |                        |     |                       |
+     |      RETRIEVER         |     |      GENERATOR        |
+     |                        |     |                       |
+     +------------+-----------+     +-----------+-----------+
+                  |                             |
+                  |                             |
+     +------------v-----------+     +-----------v-----------+
+     |                        |     |                       |
+     |    DOCUMENTATION       |     |    LANGUAGE MODEL     |
+     |    INDEX               |     |                       |
+     |                        |     |                       |
+     +------------------------+     +-----------------------+
+
++------------------------------------------------------+
+|               ARCHITECTURAL PRINCIPLES                |
++------------------------------------------------------+
+| ✓ MODULARITY: Well-defined interfaces between        |
+|   components for independent development             |
+|                                                      |
+| ✓ SEMANTIC UNDERSTANDING: Meaning-based query        |
+|   processing beyond keyword matching                 |
+|                                                      |
+| ✓ EVIDENCE-BASED GENERATION: Responses grounded      |
+|   in retrieved documentation                         |
+|                                                      |
+| ✓ ADAPTABILITY: Support for swapping models and      |
+|   approaches without system-wide changes             |
++------------------------------------------------------+
+
+Figure 4.1: High-level architecture of Doc Assist showing the relationship 
+between the Retriever, Generator, and RAG Pipeline components.
+```
